@@ -1,0 +1,22 @@
+<Aspects>
+	<!-- 定义切面配置 -->
+	<Aspect>
+	    <!-- 切面id -->
+		<id>testAddTraceIdInMDC</id>
+		<!--切面类  -->
+		<class>javasisst.AspcetTest</class>
+		<!-- 切面方法 -->
+		<method>addTraceIdInMDC</method>
+	</Aspect>
+	<!-- 定义切点 -->
+	<AspectPoint>
+	    <!-- 切面id -->
+		<AspectId>testAddTraceIdInMDC</AspectId>
+		<!-- 切入类型  1、前切  2、后切  3、round-->
+		<Type>1</Type>
+		<!--切点类  -->
+		<class>javasisst.AspectPointTest</class>
+		<!-- 切点方法 -->
+		<method>helloWorld</method>
+	</AspectPoint>
+</Aspects>
